@@ -9,8 +9,8 @@ export const NavBarComponent = () =>{
           <nav className="Nav">
             <ul className="links">
               <li className="link"><a href="">Home</a></li>
-              <li className="link"><a href=""></a></li>
-              <li className="link"><a href=""></a></li>
+              <li className="link"><a href="">Productos</a></li>
+              <li className="link"><a href="">Envios</a></li>
               <li className="link"><a href="">Contacto</a></li>
               
             </ul>
