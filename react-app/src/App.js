@@ -4,12 +4,15 @@ import './components/Navbar/NavBar.css';
 import {ItemListConteiner} from './components/containers/ItemListContainer/ItemListContainer';
 function App() {
 
-  
+  const product = [
+      { name:'Algo' }
+    ]; 
+
 
   return (
   <div>
    <NavBarComponent/>
-   <ItemListConteiner/>
+   <ItemListConteiner data={product}  greeting={'Holish'}/>
   </div>
   )
 }
