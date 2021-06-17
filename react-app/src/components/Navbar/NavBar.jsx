@@ -1,8 +1,8 @@
-
+import { CardWidgetComponent } from "../cardwidget/CardWidget";
 export const NavBarComponent = () =>{
     const shopName = 'Tienda Virtual'
     return(
-
+        
         <div className="App">
         <header className="Bar">
           <p className="Logo">{shopName}</p>
@@ -12,6 +12,8 @@ export const NavBarComponent = () =>{
               <li className="link"><a href="">Productos</a></li>
               <li className="link"><a href="">Envios</a></li>
               <li className="link"><a href="">Contacto</a></li>
+              <li><CardWidgetComponent/></li>
+        
               
             </ul>
           </nav>
