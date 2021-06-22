@@ -1,6 +1,6 @@
 import { CardComponent } from "../../CardComponent/CardComponent"
 
-export const ItemListConteiner = (props) =>{
+export const ItemListConteiner = ( {greeting}) =>{
     const producto = [
         {nombre: "Tarjeta 1",
          descripcion:"Descripcion de tarjeta 1"
@@ -16,12 +16,13 @@ export const ItemListConteiner = (props) =>{
     }
     ]
     return(
+        <div className="text-right" >
+        <h1>{greeting}</h1>
         <div className="container">
-        <h1>{props.greeting}</h1>
-        <h2>{props.data.name}</h2>
         <CardComponent data={producto[0]}/>
         <CardComponent data={producto[1]}/>
         <CardComponent data={producto[2]}/>
+            </div>
         </div>
         )
 }

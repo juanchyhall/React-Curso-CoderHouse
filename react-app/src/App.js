@@ -6,13 +6,11 @@ import { ItemListConteiner } from './components/containers/ItemListContainer/Ite
 import 'bootstrap/dist/css/bootstrap.min.css';
 function App() {
 
-  const product = [
-    { name: 'Algo' }
-  ];
+
   return (
     <div className="app">
       <NavBarComponent />
-      <ItemListConteiner data={product} greeting={'Bienvenido!'} />
+      <ItemListConteiner greeting={'Bienvenido!'} />
 
     </div>
   )
