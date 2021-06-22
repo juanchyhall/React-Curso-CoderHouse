@@ -1,4 +1,5 @@
 import { CardWidgetComponent } from "../cardwidget/CardWidget";
+/* import {Navbar} from 'react-bootstrap/Navbar'; */
 export const NavBarComponent = () =>{
     const shopName = 'Tienda Virtual'
     return(
@@ -19,5 +20,6 @@ export const NavBarComponent = () =>{
           </nav>
         </header>
       </div>
+      
     )
 }

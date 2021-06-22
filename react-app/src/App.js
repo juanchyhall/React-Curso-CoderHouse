@@ -2,7 +2,7 @@ import './App.css';
 import { NavBarComponent } from './components/Navbar/NavBar.jsx';
 import './components/Navbar/NavBar.css';
 import { ItemListConteiner } from './components/containers/ItemListContainer/ItemListContainer';
-import { CardComponent } from './components/CardComponent/CardComponent';
+
 import 'bootstrap/dist/css/bootstrap.min.css';
 function App() {
 
@@ -13,7 +13,7 @@ function App() {
     <div className="app">
       <NavBarComponent />
       <ItemListConteiner data={product} greeting={'Bienvenido!'} />
-      <CardComponent />
+
     </div>
   )
 }
