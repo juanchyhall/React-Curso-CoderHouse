@@ -1,19 +1,20 @@
 import './App.css';
-import {NavBarComponent} from './components/Navbar/NavBar.jsx';
+import { NavBarComponent } from './components/Navbar/NavBar.jsx';
 import './components/Navbar/NavBar.css';
-import {ItemListConteiner} from './components/containers/ItemListContainer/ItemListContainer';
+import { ItemListConteiner } from './components/containers/ItemListContainer/ItemListContainer';
+import { CardComponent } from './components/CardComponent/CardComponent';
+import 'bootstrap/dist/css/bootstrap.min.css';
 function App() {
 
   const product = [
-      { name:'Algo' }
-    ]; 
-
-
+    { name: 'Algo' }
+  ];
   return (
-  <div>
-   <NavBarComponent/>
-   <ItemListConteiner data={product}  greeting={'Holish'}/>
-  </div>
+    <div className="app">
+      <NavBarComponent />
+      <ItemListConteiner data={product} greeting={'Bienvenido!'} />
+      <CardComponent />
+    </div>
   )
 }
 
