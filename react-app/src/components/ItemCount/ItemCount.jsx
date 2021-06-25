@@ -1,11 +1,11 @@
 import { useState } from "react";
 
-export const ItemCount = (props) => {
+export const ItemCount = ({stock, initial}) => {
 
-    const [valor, setValor] = useState(props.initial)
+    const [valor, setValor] = useState(initial)
 
     function onAdd() {
-        if (valor < props.stock) {
+        if (valor < stock) {
             setValor(parseInt(valor) + 1)
         }
     }
