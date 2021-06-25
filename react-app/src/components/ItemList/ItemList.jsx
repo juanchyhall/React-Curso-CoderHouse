@@ -1,12 +1,13 @@
 import React from 'react'
-
-export const ItemList = () => {
+import {Item} from '../Item/Item.jsx'
+export const ItemList=({products})=> {
    
     return (
         <div>
-            {products.map}
+            {products.map(product =>{
+                return <Item product={product} key={product.id}/>
+             })
+            }
         </div>
     )
 }
-
-
