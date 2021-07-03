@@ -1,9 +1,8 @@
 import { CardWidgetComponent } from "../cardwidget/CardWidget";
-/* import {Navbar} from 'react-bootstrap/Navbar'; */
 export const NavBarComponent = () => {
- 
-  return (
 
+  return (
+    
     <div className="App">
       <nav className="navbar navbar-expand-lg navbar navbar-dark bg-dark">
         <a className="navbar-brand" >E-Commerce</a>
@@ -16,7 +15,7 @@ export const NavBarComponent = () => {
             <a className="nav-link" href="#">Productos</a>
             <a className="nav-link" href="#">Envios</a>
             <a className="nav-link " href="#" tabIndex="-1" aria-disabled="true">Contacto</a>
-            <a><CardWidgetComponent /></a>
+            <a href="#"><CardWidgetComponent/></a>
           </div>
         </div>
       </nav>

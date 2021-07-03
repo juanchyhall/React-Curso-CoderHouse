@@ -1,17 +1,12 @@
 
-
-.container{
-    background-color: rgb(25, 85, 93);
+.card{
+    border-left: 20px;
+}
+.card-body{
+    background-color: rgb(42, 44, 44);
     color: rgb(207, 88, 88);
     font-size: large;
     font-style: oblique;
     
-}
-.h3{
-    color: rgb(177, 92, 92);
-    font-family:serif;
-    font-style: oblique;
-}
-.tex-center{
-    background-color: rgb(44, 175, 164);
+    
 }

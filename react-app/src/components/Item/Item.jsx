@@ -1,18 +1,24 @@
 import React from 'react'
 import "../Item/Item.css"
 import {ItemCount} from '../ItemCount/ItemCount.jsx'
+import {CardWidgetComponent} from '../cardwidget/CardWidget.jsx'
 export const Item=({product})=> {
     return (
  
-        <div className="container">
-            <div className="text-center" >
-            <h3 className="h3">{product.title}</h3>
-            <img src={product.pictureUrl} alt="" />
-            <h5>{product.description}</h5>
-            <h3>{product.price}</h3>
-            <ItemCount stock={product.stock}  initial="1"/>
-            </div>
+       
+        <div className="card text-center container-dark bg-dark">
+        <div className="card-header">
+          {product.title}
         </div>
+        <div className="card-body">
+        <img src={product.pictureUrl} alt="" />
+          <h5 className="card-title">{product.price}</h5>
+            <p>{product.description}</p>
+            <ItemCount stock={product.stock}  initial="1"/>
+          <p></p>
+          <a className="#" className="btn btn-primary">Agregar al<CardWidgetComponent/></a>
+        </div>
+      </div>
     )
 }
 
