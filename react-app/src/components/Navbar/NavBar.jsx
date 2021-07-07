@@ -1,4 +1,5 @@
-import { CardWidgetComponent } from "../cardwidget/CardWidget";
+import { CardWidgetComponent } from '../cardwidget/CardWidget';
+
 export const NavBarComponent = () => {
 
   return (
@@ -11,11 +12,11 @@ export const NavBarComponent = () => {
         </button>
         <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
           <div className="navbar-nav">
-            <a className="nav-link active" href="#">Home <span className="sr-only">(current)</span></a>
-            <a className="nav-link" href="#">Productos</a>
-            <a className="nav-link" href="#">Envios</a>
-            <a className="nav-link " href="#" tabIndex="-1" aria-disabled="true">Contacto</a>
-            <a href="#"><CardWidgetComponent/></a>
+            <a className="nav-link active" href="/">Home <span className="sr-only">(current)</span></a>
+            <a className="nav-link" href="/category/a">Remeras</a>
+            <a className="nav-link" href="/item/1">Celulares</a>
+            <a className="nav-link " href="" tabIndex="-1" aria-disabled="true">Contacto</a>
+            <a href=""><CardWidgetComponent/></a>
           </div>
         </div>
       </nav>
