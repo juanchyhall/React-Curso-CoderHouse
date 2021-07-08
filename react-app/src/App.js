@@ -14,7 +14,7 @@ function App() {
       <BrowserRouter>
       <NavBarComponent/>
       <Switch>
-      <Route exact path="/" />
+      <Route exact path="/" component={ItemListConteiner}/>
           <Route path="/category/:id" component={ItemListConteiner} />
           <Route path="/item/:id" component={ItemDetailContainer} />
       
@@ -24,7 +24,7 @@ function App() {
 
       </Switch>
       <div>
-        <footer>Algo</footer>
+        <footer>Algo de algo</footer>
       </div>
       </BrowserRouter>
     </div>
