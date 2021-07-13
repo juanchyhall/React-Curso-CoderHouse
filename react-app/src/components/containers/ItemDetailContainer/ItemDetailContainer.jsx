@@ -11,7 +11,7 @@ export const ItemDetailContainer = (props ) => {
         .then(data =>{
             setDetails(data.items)
         })
-    }, 2000)
+    }, [])
     return (
         <div className="text-right" >
             <div className="container">

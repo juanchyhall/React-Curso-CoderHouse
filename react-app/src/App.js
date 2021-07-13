@@ -5,6 +5,7 @@ import { ItemListConteiner } from './components/containers/ItemListContainer/Ite
 import { ItemDetailContainer } from './components/containers/ItemDetailContainer/ItemDetailContainer';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import {BrowserRouter, Route, Switch} from 'react-router-dom';
+import { HomeContainer } from './components/containers/HomeContainer/HomeContainer';
 
 function App() {
 
@@ -14,19 +15,15 @@ function App() {
       <BrowserRouter>
       <NavBarComponent/>
       <Switch>
-      <Route exact path="/" component={ItemListConteiner}/>
+      <Route exact path="/" component={HomeContainer}/>
           <Route path="/category/:id" component={ItemListConteiner} />
-          <Route path="/item/:id" component={ItemDetailContainer} />
-      
-
-      <ItemListConteiner greeting={'Bienvenido!'} />
-      <ItemDetailContainer/>
+          <Route path="/items/" component={ItemDetailContainer} />
 
       </Switch>
+      </BrowserRouter>
       <div>
         <footer>Algo de algo</footer>
       </div>
-      </BrowserRouter>
     </div>
   )
 }

@@ -1,26 +1,25 @@
+import React from 'react'
+import {Navbar,Nav} from 'react-bootstrap'
+import {} from '@fortawesome/free-solid-svg-icons'
+import {NavLink} from "react-router-dom"
 import { CardWidgetComponent } from '../cardwidget/CardWidget';
 
 export const NavBarComponent = () => {
 
   return (
+    <>
+    <Navbar bg="dark" variant="dark">
+        <Navbar.Brand href="#home">E-Commers</Navbar.Brand>
+        <Nav className="mr-auto">
+          <Nav.Link as={NavLink} activeClasName="active" to="/">Home</Nav.Link>
+          <Nav.Link as={NavLink} activeClasName="active" to="/category/a">Remeras Rojas</Nav.Link>
+          <Nav.Link as={NavLink} activeClasName="active" to="/category/b">Remeras Azules</Nav.Link>
+          <Nav.Link as={NavLink} activeClasName="active" to="/category/c">Remeras Grises</Nav.Link>
+          <Nav.Link as={NavLink} activeClasName="active" to="/items">Celulares</Nav.Link>
+        </Nav>
+        <CardWidgetComponent/>
+    </Navbar>
+    </>
     
-    <div className="App">
-      <nav className="navbar navbar-expand-lg navbar navbar-dark bg-dark">
-        <a className="navbar-brand" >E-Commerce</a>
-        <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-          <span className="navbar-toggler-icon"></span>
-        </button>
-        <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
-          <div className="navbar-nav">
-            <a className="nav-link active" href="/">Home <span className="sr-only">(current)</span></a>
-            <a className="nav-link" href="/category/">Remeras</a>
-            <a className="nav-link" href="/item/123">Celulares</a>
-            <a className="nav-link " href="" tabIndex="-1" aria-disabled="true">Contacto</a>
-            <a href=""><CardWidgetComponent/></a>
-          </div>
-        </div>
-      </nav>
-    </div>
-
   )
 }
